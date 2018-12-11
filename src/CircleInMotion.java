@@ -52,7 +52,7 @@ public class CircleInMotion extends Application {
         circle.requestFocus();
     }
 
-    /** Laver en launch metode.
+    /** Laver en launch metode..
      *
      * @param args
      */
