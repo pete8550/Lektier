@@ -7,17 +7,24 @@ import javafx.scene.paint.Color;
 // Laver en nedarvning via extends, som tager fra Application.
 public class CircleInMotion extends Application {
     @Override
-    // Laver en start metode som indeholder double.
+    /** Laver en start metode som indeholder double.
+     *
+     */
     public void start(Stage primaryStage) {
         final double WIDTH = 500.0;
         final double HEIGHT = 500.0;
-    // Indsætter cirklens værdier.
+
+        /**Indsætter cirklens værdier.
+         *
+         */
         Circle circle = new Circle(Math.min(HEIGHT, WIDTH) / 10);
         circle.setCenterX(WIDTH / 2);
         circle.setCenterY(HEIGHT / 2);
         circle.setFill(Color.RED);
         circle.setStroke(Color.WHITE);
-    // Laver knapperne.
+        /** Laver knapperne.
+         *
+         */
         circle.setOnKeyPressed(e -> {
             switch (e.getCode()) {
                 case UP: circle.setCenterY(circle.getCenterY() - 10); break;
@@ -30,7 +37,9 @@ public class CircleInMotion extends Application {
                 case D: circle.setCenterX(circle.getCenterX() + 10);
             }
         });
-        // Opretter en fane, hvor der bliver indlæst de forrige indformationer og indsætter circle.
+        /** Opretter en fane, hvor der bliver indlæst de forrige indformationer og indsætter circle.
+         *
+         */
         Pane pane = new Pane();
         pane.getChildren().add(circle);
 
@@ -43,6 +52,10 @@ public class CircleInMotion extends Application {
         circle.requestFocus();
     }
 
+    /** Laver en launch metode.
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         launch(args);
     }
