@@ -1,10 +1,17 @@
+/** Det her er en test af Javadoc. Hvis det virker bliver jeg glad.
+ *
+ */
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Circle;
 import javafx.scene.paint.Color;
-// Laver en nedarvning via extends, som tager fra Application.
+
+/** Laver en nedarvning via extends, som tager fra Application.
+ *
+ */
 public class CircleInMotion extends Application {
     @Override
     /** Laver en start metode som indeholder double.
